@@ -8,7 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UIWebViewDelegate,UIGestureRecognizerDelegate>
+
+@property NSMutableDictionary *responseDic;
+@property UIScrollView *scrollView;
+@property UIScrollView *imageScrollView;
+@property UIView *myView;
+@property UIImageView *myImageView;
+@property NSData *imageData;
 
 
 @end
